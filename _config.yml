@@ -103,7 +103,9 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: git@github.com:wywang792/wywang792.github.io.git
+  branch: master
 
 
 abbrlink:
