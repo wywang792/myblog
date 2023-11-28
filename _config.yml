@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Joy Boy
+title: 小王编程进阶
 subtitle: ''
 description: ''
 keywords:
-author: Joy Boy
+author: 小王编程进阶
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://wywang.site
 permalink: posts/:abbrlink/
 permalink_defaults:
 pretty_urls:
