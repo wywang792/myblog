@@ -38,6 +38,16 @@ hexo.extend.filter.register('before_generate', () => {
       name: 'hexo-theme-butterfly',
       file: 'js/search/algolia.js',
       version
+    },
+    main_css: {
+      name: 'main-css',
+      file: 'css/index.css',
+      version
+    },
+    fontawesomeV6: {
+      name: 'fontawesomeV6',
+      file: 'css/all.min.css',
+      version
     }
   }
 
@@ -76,11 +86,6 @@ hexo.extend.filter.register('before_generate', () => {
 
       data[key] = cdnSource[type]
     })
-
-    if (cond === 'internal') {
-      data.main_css = 'css/index.css'
-      data.fontawesomeV6 = 'css/all.min.css'
-    }
     return data
   }
 
