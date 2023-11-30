@@ -77,7 +77,10 @@ hexo.extend.filter.register('before_generate', () => {
       data[key] = cdnSource[type]
     })
 
-    if (cond === 'internal') data.main_css = 'css/index.css'
+    if (cond === 'internal') {
+      data.main_css = 'css/index.css'
+      data.fontawesomeV6 = 'css/all.min.css'
+    }
     return data
   }
 

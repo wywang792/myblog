@@ -14,7 +14,7 @@ windows系统下，在系统变量中添加：
 
 ```powershell
 JAVA_HOME:
-C:\Program Files\Java\jdk1.8.0_221
+D:\Language\Java\jdk1.8.0_221
 
 CLASSPATH:
 .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar
