@@ -70,6 +70,4 @@ npm i node-sass
 
 选择->单个组件->勾选Node.js MSBuild 支持，下载
 
-# 执行hexo sever报错
-
 
