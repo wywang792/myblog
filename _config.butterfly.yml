@@ -671,7 +671,7 @@ aside:
       link: https://github.com/wywang792
   card_announcement:
     enable: true
-    content: 这里是小王编程进阶，记录自己日常的学习笔记，欢迎关注，一起进步！
+    content: 这里是小王编程进阶，记录自己日常工作中遇到的问题，同时也作为自己的学习笔记，欢迎关注，一起进步！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
