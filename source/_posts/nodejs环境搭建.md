@@ -1,6 +1,6 @@
 ---
-title: NodeJs环境搭建
-date: 2020-08-19 12:00:00
+title: nodejs环境搭建
+date: 2022-12-04 12:00:00
 categories:
   - 环境搭建
 tags:
@@ -9,6 +9,7 @@ tags:
   - nodejs
 abbrlink: 3f14f460
 ---
+  
 # 一、安装nvm
 在Web项目开发中，由于各种前端框架、插件 以及 Nodejs、Npm 的飞速更新，在开发新项目或对老项目进行更新维护时，有些项目版本的配置与当前Node、Npm环境不匹配，导致运行报错，甚至无法启动。
 

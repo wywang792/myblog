@@ -1,12 +1,13 @@
 ---
-title: JDK8环境搭建
-date: 2019-07-28 12:00:00
+title: jdk8环境搭建
+date: 2022-10-10 12:00:00
 categories:
   - 环境搭建
 tags:
   - java
 abbrlink: 4a17b156
 ---
+  
 ## 1、使用官方安装包进行安装
 
 ## 2、配置环境变量

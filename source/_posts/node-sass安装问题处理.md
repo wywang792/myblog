@@ -1,15 +1,15 @@
 ---
 title: node-sass安装问题处理
+date: 2022-12-06 12:00:00
 categories:
   - 常见问题
 tags:
   - javascript
   - nodejs
 abbrlink: 8d194d53
-date: 2023-05-13 12:00:00
 ---
 
-# 安装node-sass时的问题处理
+# 安装node-sass时会遇到的问题
 
 主要会出现以下三个问题：
 
@@ -32,8 +32,7 @@ date: 2023-05-13 12:00:00
 方法1：在安装node-sass包的时候，使用以下命令修改下载地址
 
 ```shell
-
-
+npm i node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
 ```
 
 方法2：给系统添加环境变量：
@@ -73,17 +72,4 @@ npm i node-sass
 
 # 执行hexo sever报错
 
-如图：
-
-![image-20230113152815193](./assets/node-sass安装问题处理/image-20230113152815193.png)
-
-**问题原因：**hexo sever命令会执行hexo.ps1这个脚本，该脚本为powershell脚本，在windows系统下，我们无法执行powershell脚本
-
-**解决方案：**修改powershell脚本执行策略
-
-**具体操作：**
-
-设置->隐私和安全性->开发者选项->允许本地PowerShell脚本在为签名的情况下运行
-
-![image-20230113153322329](./assets/node-sass安装问题处理/image-20230113153322329.png)
 
