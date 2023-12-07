@@ -9,7 +9,7 @@ abbrlink: 3d513d05
 cover:
 ---
   
-# 执行hexo sever报错
+# 执行hexo server报错
 
 如图：
 
