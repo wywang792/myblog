@@ -1,5 +1,5 @@
 ---
-title: git基础.md
+title: git基础
 date: 2023-01-11 00:00:00
 categories:
   - 版本控制
