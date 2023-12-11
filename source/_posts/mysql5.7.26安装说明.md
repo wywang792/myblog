@@ -1,12 +1,11 @@
 ---
-title: mysql5.7.26安装说明.md
+title: mysql5.7.26安装说明
 date: 2020-08-10 00:00:00
 categories:
   - 环境搭建
 tags:
-  
   - mysql
-abbrlink: 
+abbrlink: 5c064474
 cover:
 ---
 

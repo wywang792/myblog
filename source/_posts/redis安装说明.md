@@ -1,12 +1,12 @@
 ---
-title: redis3.2.100安装说明.md
-date: 2020-08-10 00:00:00
+title: redis3.2.100安装说明
+date: 2020-08-20 00:00:00
 categories:
   - 环境搭建
 tags:
   - 数据库
   - redis
-abbrlink: 
+abbrlink: 99d50e9d
 cover:
 ---
 

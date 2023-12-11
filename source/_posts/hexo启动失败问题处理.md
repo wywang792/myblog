@@ -1,5 +1,5 @@
 ---
-title: hexo启动失败问题处理.md
+title: hexo启动失败问题处理
 date: 2023-05-06 14:23:04
 categories:
   - 博客搭建

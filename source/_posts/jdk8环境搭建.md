@@ -1,6 +1,6 @@
 ---
 title: jdk8环境搭建
-date: 2022-10-10 12:00:00
+date: 2020-08-08 00:00:00
 categories:
   - 环境搭建
 tags:

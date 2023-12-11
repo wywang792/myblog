@@ -1,11 +1,11 @@
 ---
-title: fastDFS安装使用.md
-date: 2020-11-13 14:23:04
+title: fastDFS安装使用
+date: 2020-10-10 14:23:04
 categories:
   - 环境搭建
 tags:
   - fastDFS
-abbrlink: 
+abbrlink: 77c5e3ec
 cover:
 ---
 

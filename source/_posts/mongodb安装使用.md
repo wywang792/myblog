@@ -1,12 +1,12 @@
 ---
-title: mongodb安装使用.md
-date: 2020-12-18 14:23:04
+title: mongodb安装使用
+date: 2020-08-18 14:23:04
 categories:
   - 环境搭建
 tags:
   - 数据库
   - mongodb
-abbrlink: 
+abbrlink: c7ccc926
 cover:
 ---
 
