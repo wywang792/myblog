@@ -3,7 +3,7 @@
     - var now = new Date()
     - var nowYear = now.getFullYear()
     if theme.footer.owner.since && theme.footer.owner.since != nowYear
-      .copyright!= `陕ICP备2021001261号`
+      .copyright!= `<a href='https://beian.miit.gov.cn/'>陕ICP备2021001261号</a>`
     else
       .copyright!= `&copy;${nowYear} By ${config.author}`
   if theme.footer.copyright
