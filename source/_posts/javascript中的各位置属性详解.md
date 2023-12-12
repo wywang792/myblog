@@ -30,7 +30,7 @@ cover:
 **obj.clientWidth**: 指控件可视区域内，内容区的宽度
 **obj.clientHeight**: 指控件可视区域内，内容区的高度
 **obj.clientTop**: 指控件上方边框的高度，如果没有边框或者不定位该元素，它的值就是0
-**obj.clientWidth**: 指控件坐方边框的宽度，如果没有边框或者不定位该元素，它的值就是0
+**obj.clientWidth**: 指控件左方边框的宽度，如果没有边框或者不定位该元素，它的值就是0
 
 
 ```javascript
