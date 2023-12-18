@@ -8,6 +8,7 @@ tags:
   - javascript
   - nodejs
 abbrlink: 3f14f460
+cover:
 ---
   
 # 一、安装nvm

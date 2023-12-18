@@ -7,6 +7,7 @@ tags:
   - javascript
   - nodejs
 abbrlink: 8d194d53
+cover:
 ---
 
 # 安装node-sass时会遇到的问题

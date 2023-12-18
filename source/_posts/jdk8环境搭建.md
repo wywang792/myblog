@@ -6,6 +6,7 @@ categories:
 tags:
   - java
 abbrlink: 4a17b156
+cover:
 ---
   
 ## 1、使用官方安装包进行安装
