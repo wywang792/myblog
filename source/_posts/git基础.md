@@ -243,3 +243,12 @@ git branch --set-upstream branch-name remote-branch-name
 # 建立追踪关系，在现有分支于指定的远程分支之间
 ```
 
+
+
+## 12、其他命令
+
+```shell
+git log --since==2022-12-01 --until==2023-12-06 --author="wywang" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END {printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'
+# 统计代码量
+```
+
