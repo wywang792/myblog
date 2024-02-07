@@ -20,7 +20,7 @@ git的4个基本概念，
 
 我们的本地修改叫做工作区，git add后添加到缓存区，git commit后添加到本地仓库，git push后推到远程仓库
 
-# 二、git命令
+# 二、使用步骤
 
 ## 1、初始化仓库
 
@@ -239,10 +239,16 @@ git remote add origin https://gitee.com/wywang792/myblog
 git branch --track branch-name remote-branch-name                
 # 新建一个分支，与指定的远程分支建立追踪关系
 
-git branch --set-upstream branch-name remote-branch-name                   
-# 建立追踪关系，在现有分支于指定的远程分支之间
-```
+git branch --set-upstream-to=remote/remote-branch-name branch-name                    
+# 建立追踪关系，在指定的远程分支之间与现有分支之间建立追踪关系
 
+# 如果是刚创建的项目，设置了远程仓库，在使用上方命令建立追踪关系时，如果远程仓库的分支下已经有了代码，会提示：
+# fetal:the requested upstream branch 'origin/master' does not exist
+# 此时需要先从远程拉取一次代码
+git pull origin master --allow-unrelated-histories
+#  --allow-unrelated-histories 尝试合并两个具有不相关历史的分支时使用
+# 执行上述命令后，在使用--set-upstream-to来建立分支的追踪关系
+```
 
 
 ## 12、其他命令
@@ -252,3 +258,53 @@ git log --since==2022-12-01 --until==2023-12-06 --author="wywang" --pretty=tform
 # 统计代码量
 ```
 
+# 三、常用命令
+
+```shell
+git branch
+# 列出所有本地分支
+
+git branch -r
+# 列出所有远程分支
+
+git branch -a 
+# 列出所有本地分支和远程分支
+
+git branch -d [分支名] 
+# 删除分支
+
+git branch [分支名]
+# 新建一个分支，但依然停留在当前分支
+
+git branch --track [分支名] [远程分支] 
+# 新建一个分支，追踪远程分支
+
+git branch --set-upstream [当前分支] [远程分支]
+# 在现有分支和远程分支之间建立关系(老版本)
+
+git branch --set-upstream-to=[远程仓库名]/[远程分支] [当前分支] 
+# 在现有分支和远程分支之间建立关系
+
+
+git checkout [分支名] 
+# 切换到指定分支，并更新工作区
+
+git checkout -b [分支名] 
+# 新建一个分支，并切换到该分支，等于如下两条命令
+git branch [分支名]
+git checkout [分支名]
+
+git fetch [远程仓库名]
+# 更新本地仓库储存的远程仓库副本
+
+git pull [远程仓库名] [远程分支]:[本地分支]
+# 使用远程分支更新到本地分支，如果本地分支为当前分支，:和本地址分支名可以不用；此命令相当于如下两个操作：
+git fetch [远程仓库名]
+git merge [远程分支]
+
+git push [远程仓库名] [本地分支]:[远程分支]
+将本地分支更新到远程分支
+如果省略:和远程分支，则推送到本地分支追踪的远程分支，如果不存在，则会新建
+如果省略本地分支，则表示删除指定的远程分支，因为这样等于推送一个空的本地分支到远程分支。
+git merge [分支名]合并指定分支到当前分支
+```
