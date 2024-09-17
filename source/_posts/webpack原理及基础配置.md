@@ -1,11 +1,11 @@
 ---
 title: webpack原理及基础配置
-date: 2023-07-03 12:00:00
 categories:
   - 前端工程化
 tags:
   - webpack
-abbrlink: 
+abbrlink: 4edc021
+date: 2023-07-03 12:00:00
 cover:
 ---
 

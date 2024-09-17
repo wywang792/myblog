@@ -1,15 +1,15 @@
-```
+---
 title: Js兼容性(三)-babel插件
-date: 2023-08-26 12:00:00
 categories:
   - 前端工程化
 tags:
-  - js
-abbrlink: 
+  - javascript
+abbrlink: 93fec053
+date: 2023-08-26 12:00:00
 cover:
-```
+---
 
-# babel插件
+# babel 插件
 
 除了预设可以转换代码之外，插件也可以转换代码，它们的顺序是：
 
@@ -29,30 +29,30 @@ cover:
 
 ```js
 class A {
-    a = 1;
-    constructor(){
-        this.b = 3;
-    }
+  a = 1;
+  constructor() {
+    this.b = 3;
+  }
 }
 ```
 
 ## `@babel/plugin-proposal-function-bind`
 
-该插件可以让你轻松的为某个方法绑定this
+该插件可以让你轻松的为某个方法绑定 this
 
 ```js
 function Print() {
-    console.log(this.loginId);
+  console.log(this.loginId);
 }
 
 const obj = {
-    loginId: "abc"
+  loginId: "abc",
 };
 
 obj::Print(); //相当于：Print.call(obj);
 ```
 
-> 遗憾的是，目前vscode无法识别该语法，会在代码中报错，虽然并不会有什么实际性的危害，但是影响观感
+> 遗憾的是，目前 vscode 无法识别该语法，会在代码中报错，虽然并不会有什么实际性的危害，但是影响观感
 
 ## `@babel/plugin-proposal-optional-chaining`
 
@@ -87,4 +87,4 @@ console.error("bar");
 
 ## `@babel/plugin-transform-runtime`
 
-用于提供一些公共的API，这些API会帮助代码转换
+用于提供一些公共的 API，这些 API 会帮助代码转换

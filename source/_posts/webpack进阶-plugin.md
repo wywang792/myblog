@@ -1,13 +1,12 @@
 ---
 title: webpack进阶-plugin
-date: 2023-07-05 12:00:00
 categories:
   - 前端工程化
 tags:
   - webpack
-abbrlink: 
+abbrlink: a142c03f
+date: 2023-07-05 12:00:00
 cover:
-
 ---
 
 

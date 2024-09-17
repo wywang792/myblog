@@ -1,13 +1,13 @@
-```
+---
 title: webpack进阶-性能优化(六)
-date: 2023-08-01 12:00:00
 categories:
   - 前端工程化
 tags:
   - webpack
-abbrlink: 
+abbrlink: '67e24958'
+date: 2023-08-01 12:00:00
 cover:
-```
+---
 
 # 自动分包
 

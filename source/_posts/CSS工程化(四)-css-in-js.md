@@ -1,13 +1,13 @@
-```
+---
 title: CSS工程化(四)-css-in-js
-date: 2023-09-18 12:00:00
 categories:
   - 前端工程化
 tags:
-  - css
-abbrlink: 
+  - CSS
+abbrlink: 2c556a9a
+date: 2023-09-18 12:00:00
 cover:
-```
+---
 
 # css in js
 

@@ -1,13 +1,13 @@
-```
+---
 title: Js兼容性(二)-babel预设
-date: 2023-08-28 12:00:00
 categories:
   - 前端工程化
 tags:
-  - js
-abbrlink: 
+  - javascript
+abbrlink: 32dad9ce
+date: 2023-08-28 12:00:00
 cover:
-```
+---
 
 # babel预设
 

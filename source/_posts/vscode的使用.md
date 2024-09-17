@@ -1,13 +1,13 @@
-```
+---
 title: vscode的使用
-date: 2022-10-22 12:00:00
 categories:
   - 开发工具
 tags:
   - vscode
-abbrlink: 
+abbrlink: 861717a6
+date: 2022-10-22 12:00:00
 cover:
-```
+---
 
 ## VS Code优化配置项
 

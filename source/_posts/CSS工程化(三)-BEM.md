@@ -1,13 +1,13 @@
-```
+---
 title: CSS工程化(三)-BEM
-date: 2023-09-17 12:00:00
 categories:
   - 前端工程化
 tags:
-  - css
-abbrlink: 
+  - CSS
+abbrlink: c6122d30
+date: 2023-09-17 12:00:00
 cover:
-```
+---
 
 # BEM
 

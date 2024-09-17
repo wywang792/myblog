@@ -1,13 +1,13 @@
-```
+---
 title: webpack进阶-性能优化(十二).md
-date: 2023-08-20 12:00:00
 categories:
   - 前端工程化
 tags:
   - webpack
-abbrlink: 
+abbrlink: 37fb3828
+date: 2023-08-20 12:00:00
 cover:
-```
+---
 
 # gzip
 

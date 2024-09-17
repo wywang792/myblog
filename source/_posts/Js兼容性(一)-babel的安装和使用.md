@@ -1,13 +1,13 @@
-```
+---
 title: Js兼容性(一)-babel的安装和使用
-date: 2023-08-25 12:00:00
 categories:
   - 前端工程化
 tags:
-  - js
-abbrlink: 
+  - javascript
+abbrlink: 294efb28
+date: 2023-08-25 12:00:00
 cover:
-```
+---
 
 # babel的安装和使用 {ignore}
 

@@ -1,13 +1,13 @@
-```
+---
 title: Js兼容性(四)-在webpack中使用babel
-date: 2023-09-08 12:00:00
 categories:
   - 前端工程化
 tags:
-  - js
-abbrlink: 
+  - javascript
+abbrlink: d9a194fb
+date: 2023-09-08 12:00:00
 cover:
-```
+---
 
 # 在webpack中使用babel
 

@@ -1,13 +1,13 @@
-```
+---
 title: webpack进阶-性能优化(七)
-date: 2023-08-05 12:00:00
 categories:
   - 前端工程化
 tags:
   - webpack
-abbrlink:
+abbrlink: f8ea51d2
+date: 2023-08-05 12:00:00
 cover:
-```
+---
 
 # 代码压缩
 

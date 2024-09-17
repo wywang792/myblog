@@ -1,13 +1,13 @@
-```
-title: webpack进阶-性能优化(五)
-date: 2023-07-22 12:00:00
+---
+title: webpack进阶-性能优化(二)
 categories:
   - 前端工程化
 tags:
   - webpack
-abbrlink: 
+abbrlink: feed012a
+date: 2023-07-22 12:00:00
 cover:
-```
+---
 
 # 减少模块解析
 

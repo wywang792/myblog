@@ -1,13 +1,13 @@
-```
+---
 title: CSS工程化(二)-利用webpack拆分css
-date: 2023-09-16 12:00:00
 categories:
   - 前端工程化
 tags:
-  - css
-abbrlink: 
+  - CSS
+abbrlink: 9f5212c6
+date: 2023-09-16 12:00:00
 cover:
-```
+---
 
 # 利用webpack拆分css
 

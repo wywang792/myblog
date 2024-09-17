@@ -1,13 +1,13 @@
-```
+---
 title: webpack进阶-性能优化(五)
-date: 2023-07-28 12:00:00
 categories:
   - 前端工程化
 tags:
   - webpack
-abbrlink: 
+abbrlink: feed012a
+date: 2023-07-28 12:00:00
 cover:
-```
+---
 
 # 手动分包
 
@@ -17,7 +17,7 @@ cover:
 
 1. 先单独的打包公共模块
 
-![image-20240918000817183](./assets/webpack进阶-性能优化(五)/image-20240918000817183.png)
+![image-20240918000817183](<./assets/webpack进阶-性能优化(五)/image-20240918000817183.png>)
 
 公共模块会被打包成为动态链接库(dll Dynamic Link Library)，并生成资源清单
 
@@ -27,35 +27,40 @@ cover:
 
 ```js
 //源码，入口文件index.js
-import $ from "jquery"
-import _ from "lodash"
+import $ from "jquery";
+import _ from "lodash";
 _.isArray($(".red"));
 ```
 
 由于资源清单中包含`jquery`和`lodash`两个模块，因此打包结果的大致格式是：
 
 ```js
-(function(modules){
+(function (modules) {
   //...
 })({
   // index.js文件的打包结果并没有变化
-  "./src/index.js":
-  function(module, exports, __webpack_require__){
-    var $ = __webpack_require__("./node_modules/jquery/index.js")
-    var _ = __webpack_require__("./node_modules/lodash/index.js")
+  "./src/index.js": function (module, exports, __webpack_require__) {
+    var $ = __webpack_require__("./node_modules/jquery/index.js");
+    var _ = __webpack_require__("./node_modules/lodash/index.js");
     _.isArray($(".red"));
   },
   // 由于资源清单中存在，jquery的代码并不会出现在这里
-  "./node_modules/jquery/index.js":
-  function(module, exports, __webpack_require__){
+  "./node_modules/jquery/index.js": function (
+    module,
+    exports,
+    __webpack_require__
+  ) {
     module.exports = jquery;
   },
   // 由于资源清单中存在，lodash的代码并不会出现在这里
-  "./node_modules/lodash/index.js":
-  function(module, exports, __webpack_require__){
+  "./node_modules/lodash/index.js": function (
+    module,
+    exports,
+    __webpack_require__
+  ) {
     module.exports = lodash;
-  }
-})
+  },
+});
 ```
 
 # 打包公共模块
@@ -70,14 +75,13 @@ module.exports = {
   mode: "production",
   entry: {
     jquery: ["jquery"],
-    lodash: ["lodash"]
+    lodash: ["lodash"],
   },
   output: {
     filename: "dll/[name].js",
-    library: "[name]"
-  }
+    library: "[name]",
+  },
 };
-
 ```
 
 2. 利用`DllPlugin`生成资源清单
@@ -88,11 +92,10 @@ module.exports = {
   plugins: [
     new webpack.DllPlugin({
       path: path.resolve(__dirname, "dll", "[name].manifest.json"), //资源清单的保存位置
-      name: "[name]"//资源清单中，暴露的变量名
-    })
-  ]
+      name: "[name]", //资源清单中，暴露的变量名
+    }),
+  ],
 };
-
 ```
 
 运行后，即可完成公共模块打包
@@ -114,8 +117,8 @@ module.exports = {
 new CleanWebpackPlugin({
   // 要清除的文件或目录
   // 排除掉dll目录本身和它里面的文件
-  cleanOnceBeforeBuildPatterns: ["**/*", '!dll', '!dll/*']
-})
+  cleanOnceBeforeBuildPatterns: ["**/*", "!dll", "!dll/*"],
+});
 ```
 
 > 目录和文件的匹配规则使用的是[globbing patterns](https://github.com/sindresorhus/globby#globbing-patterns)
@@ -124,16 +127,15 @@ new CleanWebpackPlugin({
 
 ```js
 module.exports = {
-  plugins:[
+  plugins: [
     new webpack.DllReferencePlugin({
-      manifest: require("./dll/jquery.manifest.json")
+      manifest: require("./dll/jquery.manifest.json"),
     }),
     new webpack.DllReferencePlugin({
-      manifest: require("./dll/lodash.manifest.json")
-    })
-  ]
-}
-
+      manifest: require("./dll/lodash.manifest.json"),
+    }),
+  ],
+};
 ```
 
 # 总结
@@ -147,8 +149,8 @@ module.exports = {
 **手动打包的注意事项**：
 
 1. 资源清单不参与运行，可以不放到打包目录中
-2. 记得手动引入公共JS，以及避免被删除
-3. 不要对小型的公共JS库使用
+2. 记得手动引入公共 JS，以及避免被删除
+3. 不要对小型的公共 JS 库使用
 
 **优点**：
 

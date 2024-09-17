@@ -1,13 +1,13 @@
-```
+---
 title: webpack进阶-性能优化(四)
-date: 2023-07-26 12:00:00
 categories:
   - 前端工程化
 tags:
   - webpack
-abbrlink: 
+abbrlink: f8465657
+date: 2023-07-26 12:00:00
 cover:
-```
+---
 
 # 热替换 HMR
 
@@ -15,11 +15,11 @@ cover:
 
 当使用`webpack-dev-server`时，考虑代码改动到效果呈现的过程
 
-![image-20240918000430306](./assets/webpack进阶-性能优化(四)/image-20240918000430306.png)
+![image-20240918000430306](<./assets/webpack进阶-性能优化(四)/image-20240918000430306.png>)
 
 而使用了热替换后，流程发生了变化
 
-![image-20240918000438360](./assets/webpack进阶-性能优化(四)/image-20240918000438360.png)
+![image-20240918000438360](<./assets/webpack进阶-性能优化(四)/image-20240918000438360.png>)
 
 # 使用和原理
 
@@ -27,14 +27,14 @@ cover:
 
 ```js
 module.exports = {
-  devServer:{
-    hot:true // 开启HMR
+  devServer: {
+    hot: true, // 开启HMR
   },
-  plugins:[ 
+  plugins: [
     // 可选，新版webpack中不配置插件，只要开启hot即可开启热替换
-    new webpack.HotModuleReplacementPlugin()
-  ]
-}
+    new webpack.HotModuleReplacementPlugin(),
+  ],
+};
 ```
 
 2. 更改代码
@@ -42,8 +42,9 @@ module.exports = {
 ```js
 // index.js
 
-if(module.hot){ // 是否开启了热更新
-  module.hot.accept() // 接受热更新
+if (module.hot) {
+  // 是否开启了热更新
+  module.hot.accept(); // 接受热更新
 }
 ```
 
@@ -57,7 +58,7 @@ if(module.hot){ // 是否开启了热更新
 
 `module.hot.accept()`的作用是让`webpack-dev-server`通过`socket`管道，把服务器更新的内容发送到浏览器
 
-![image-20240918000443820](./assets/webpack进阶-性能优化(四)/image-20240918000443820.png)
+![image-20240918000443820](<./assets/webpack进阶-性能优化(四)/image-20240918000443820.png>)
 
 然后，将结果交给插件`HotModuleReplacementPlugin`注入的代码执行
 

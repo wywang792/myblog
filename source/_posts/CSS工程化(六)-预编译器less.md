@@ -1,13 +1,13 @@
-```
+---
 title: CSS工程化(六)-预编译器less
-date: 2023-09-25 12:00:00
 categories:
   - 前端工程化
 tags:
-  - css
-abbrlink: 
+  - CSS
+abbrlink: 4d32a482
+date: 2023-09-25 12:00:00
 cover:
-```
+---
 
 # CSS预编译器
 

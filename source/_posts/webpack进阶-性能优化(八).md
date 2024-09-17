@@ -1,13 +1,13 @@
-```
+---
 title: webpack进阶-性能优化(八).md
-date: 2023-08-08 12:00:00
 categories:
   - 前端工程化
 tags:
   - webpack
-abbrlink: 
+abbrlink: d54eff84
+date: 2023-08-08 12:00:00
 cover:
-```
+---
 
 # tree shaking
 

@@ -1,13 +1,13 @@
-```
+---
 title: CSS工程化(八)-抽离css文件
-date: 2023-09-29 12:00:00
 categories:
   - 前端工程化
 tags:
-  - css
-abbrlink: 
+  - CSS
+abbrlink: 9bfbc455
+date: 2023-09-29 12:00:00
 cover:
-```
+---
 
 # 抽离css文件
 

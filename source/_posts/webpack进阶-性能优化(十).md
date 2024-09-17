@@ -1,13 +1,13 @@
-```
+---
 title: webpack进阶-性能优化(十)
-date: 2023-08-11 12:00:00
 categories:
   - 前端工程化
 tags:
   - webpack
-abbrlink: 
+abbrlink: 50c0734e
+date: 2023-08-11 12:00:00
 cover:
-```
+---
 
 # ESLint {ignore}
 

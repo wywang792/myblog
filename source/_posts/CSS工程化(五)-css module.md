@@ -1,13 +1,13 @@
-```
+---
 title: CSS工程化(五)-css module
-date: 2023-09-19 12:00:00
 categories:
   - 前端工程化
 tags:
-  - css
-abbrlink: 
+  - CSS
+abbrlink: cad6351b
+date: 2023-09-19 12:00:00
 cover:
-```
+---
 
 # css module
 

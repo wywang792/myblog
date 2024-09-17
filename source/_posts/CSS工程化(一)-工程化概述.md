@@ -1,13 +1,13 @@
-```
+---
 title: CSS工程化(一)-工程化概述
-date: 2023-09-15 12:00:00
 categories:
   - 前端工程化
 tags:
-  - css
-abbrlink: 
+  - CSS
+abbrlink: f5464c01
+date: 2023-09-15 12:00:00
 cover:
-```
+---
 
 # css工程化概述
 
