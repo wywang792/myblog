@@ -1,5 +1,5 @@
 ---
-title: webpack进阶-性能优化(十二).md
+title: webpack进阶(十二)-gzip
 categories:
   - 前端工程化
 tags:

@@ -1,5 +1,5 @@
 ---
-title: webpack进阶-性能优化(十一)
+title: webpack进阶(十一)-bundle analyzer
 categories:
   - 前端工程化
 tags:

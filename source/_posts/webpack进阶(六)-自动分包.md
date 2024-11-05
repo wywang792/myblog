@@ -1,5 +1,5 @@
 ---
-title: webpack进阶-性能优化(六)
+title: webpack进阶(六)-自动分包
 categories:
   - 前端工程化
 tags:

@@ -1,5 +1,5 @@
 ---
-title: webpack进阶-性能优化(七)
+title: webpack进阶(七)-代码压缩
 categories:
   - 前端工程化
 tags:
