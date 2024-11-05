@@ -9,7 +9,7 @@ date: 2023-08-11 12:00:00
 cover:
 ---
 
-# ESLint {ignore}
+# ESLint
 
 ESLint是一个针对JS的代码风格**检查**工具，当不满足其要求的风格时，会给予警告或错误
 
